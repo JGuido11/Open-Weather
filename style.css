@@ -17,11 +17,129 @@ body{
 .container{
     position: relative;
     width: 400px;
-    height: 105px;
+
     padding: 28px 32px;
     overflow: hidden;
     background: #fff;
     border-radius: 18px;
     font-family: 'Roboto', sans-serif;
     transition: 0.6s ease-out;
+}
+
+
+.search-box{
+    display: flex;
+    width: 100%;
+    height: min-content;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input{
+    width: 80%;
+    padding-left: 32px;
+    color: #06283d;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.search-box input::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #06283d;
+}
+
+.search-box button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+    color: #06283d;
+    background: #dff6ff;
+}
+
+.search-box button:hover{
+    color: #fff;
+    background: #06283d;
+}
+
+.search-box span{
+    position: absolute;
+    color: #06283d;
+    font-size: 38px;
+}
+
+.weather-box img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.weather-box .temperature{
+    position: relative;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+    color: #06283d;
+}
+
+.weather-box .temperature span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.weather-box .description{
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #06283d;
+}
+
+.weather-details{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.weather-details .humidity,
+.weather-details .wind {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+
+.weather-details .humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.weather-details .wind{
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.weather-details .material-symbols-outlined{
+    color: #06283d;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.weather-details span{
+    color: #06283d;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.weather-details p{
+    color: #06283d;
+    font-size: 14px;
+    font-weight: 500;
 }
